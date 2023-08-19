@@ -14,6 +14,7 @@ services:
             context: .
             dockerfile: Dockerfile
         image: hds:development
+        restart: unless-stopped
         container_name: hds_django
         command: /app/docker/start.sh server
         depends_on:

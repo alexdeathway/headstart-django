@@ -18,6 +18,7 @@ services:
             context: .
             dockerfile: Dockerfile
         image: hds:production
+        restart: unless-stopped
         container_name: hds_django_production
         command: /app/docker/start.sh server
         depends_on:
