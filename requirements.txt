@@ -14,10 +14,11 @@ psycopg2-binary==2.9.7
 gunicorn==21.2.0
 eventlet==0.33.3
 dnspython==2.3.0
-djangorestframework==3.14.0
+
 Markdown==3.4.3
 django-filter==23.2
 django-ipware==5.0.0
+python-dotenv==1.0.0
 
 #[api-packages]
 django-cors-headers==3.14.0
