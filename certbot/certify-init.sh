@@ -14,3 +14,9 @@ certbot certonly \
     --rsa-key-size 4096 \
     --agree-tos \
     --noninteractive
+
+echo "Setting up auto-renewal..."
+
+apk add --no-cache dcron
+echo "0 12 * * * /usr/bin/certbot renew --quiet" | crontab -
+crond -b
