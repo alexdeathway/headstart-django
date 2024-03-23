@@ -1,0 +1,22 @@
+# Ignore development files and directories
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+*.egg-info/
+dist/
+build/
+*.log
+
+# Ignore database files
+*.sqlite3
+
+
+# Ignore environment-specific files
+.env
+.env.*
+.envrc
+
+# Ignore version control files
+.git/
+.gitignore
