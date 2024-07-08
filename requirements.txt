@@ -1,17 +1,7 @@
-asgiref==3.7.2
 Django==5.0.3
 django-debug-toolbar==3.7.0
 django-extensions==3.2.1
-dnspython==2.3.0
 eventlet==0.33.3
-greenlet==3.0.3
 gunicorn==21.2.0
-packaging==24.0
 psycopg2-binary==2.9.7
-pydotplus==2.0.2
-pyparsing==3.0.9
 python-dotenv==1.0.0
-pytz==2021.3
-six==1.16.0
-sqlparse==0.4.4
-typing_extensions==4.10.0
