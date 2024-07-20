@@ -45,7 +45,7 @@ services:
         build:
             context: ./nginx
             dockerfile: Dockerfile
-        image: nginx:development
+        image: nginx:production
         container_name: hds_nginx_production
         ports:
             - 80:80

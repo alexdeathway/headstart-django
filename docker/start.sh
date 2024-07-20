@@ -27,6 +27,6 @@ if [ "$PROCESS_TYPE" = "server" ]; then
             --log-level DEBUG \
             --access-logfile "-" \
             --error-logfile "-" \
-            archiver.wsgi | tee "$GUNICORN_LOG_FILE"
+            core.wsgi | tee "$GUNICORN_LOG_FILE"
     fi
 fi
