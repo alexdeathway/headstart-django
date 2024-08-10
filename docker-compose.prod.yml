@@ -11,6 +11,8 @@ volumes:
         name: hds_certbot_web
     certbot_certs:
         name: hds_certbot_certs
+    nginx_config:
+        name: hds_nginx_config
 
 services:
     django:
@@ -57,6 +59,7 @@ services:
             - media_files:/app/media:ro
             - certbot_web:/vol/www:ro
             - certbot_certs:/etc/letsencrypt/:ro
+            - nginx_config:/etc/nginx/:rw
         env_file:
             - .env
 
@@ -71,4 +74,5 @@ services:
         volumes:
             - certbot_web:/vol/www:rw
             - certbot_certs:/etc/letsencrypt/:rw
+            - nginx_config:/etc/nginx/:rw
         restart: unless-stopped
