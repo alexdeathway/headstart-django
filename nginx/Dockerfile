@@ -9,6 +9,7 @@ COPY ./manager.sh /manager.sh
 
 USER root
 
+RUN apk add --no-cache inotify-tools
 RUN apk add --no-cache openssl bash
 RUN chmod +x /manager.sh
 

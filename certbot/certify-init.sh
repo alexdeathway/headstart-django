@@ -22,8 +22,6 @@ fi
 if [ -f "/etc/letsencrypt/live/${DOMAIN}/fullchain.pem" ]; then
     echo "SSL cert exists, enabling HTTPS..."
     envsubst '${DOMAIN}' < /etc/nginx/nginx.prod.conf > /etc/nginx/conf.d/default.conf
-    echo "Reloading Nginx configuration..."
-    nginx -s reload
 else
     echo "Certbot unable to get SSL cert,server HTTP only..."
 fi
@@ -32,4 +30,4 @@ fi
 echo "Setting up auto-renewal..."
 apk add --no-cache dcron
 echo "0 12 * * * /usr/bin/certbot renew --quiet" | crontab -
-crond -b
+crond -f
