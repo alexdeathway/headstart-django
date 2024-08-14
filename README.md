@@ -1,12 +1,30 @@
 # headstart-django
-___
-This template is designed to spin up a Django project using PostgreSQL, Gunicorn, Nginx, and Certbot (for SSL). It includes setups for both development and production environments to run the project in a containerized development environment.
+
+This template is designed to spin up a Django project using PostgreSQL, Gunicorn, Nginx, and Certbot (for SSL). It includes setups for both development and production  to run the project in a containerized environment.
 
 Motivation: I needed a Django Docker setup for my projects and came across this article [The (near) Perfect Dockerfile for Django Applications by Siddharth Sahu](https://faun.pub/the-near-perfect-dockerfile-for-django-applications-8bc352a1e871). Initially, decided to use this setup, but it was missing or contradicting some features that were essential for projects. So, decided to build and add those features on top. Hence, this template.
 
 
-### Production Environment Setup
+## TechStack
 
+
+- `Django 5.1`
+- `PostgreSQL 13.3`
+- `Gunicorn 21.2.0`
+- `Nginx 1.23.0`
+- `Certbot 1.27.0`
+  
+## Features
+
+- Quick setup for Django project with core app.
+- Dockerized setup for both development and production environments.
+- Auto renewable SSL certificates using Certbot
+- Production ready nginx configuration
+- Local configured `static` and `media` directories (you can remove them if you want to use S3 or any other storage service).
+- Support for postgresql and sqlite databases( sqlite will be used in development when postgresql isn't available).
+
+### Production Environment Setup
+___
 1. **Create a `.env` File**: In the root directory of your project, create a `.env` file with the required environment variables. Refer to the provided `template.env` for guidance.
 
 2. **Run Docker Compose**: Execute the following command to build and run your project in a production environment:
