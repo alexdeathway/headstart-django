@@ -1,4 +1,4 @@
-Django==5.0.3
+Django==5.1
 django-debug-toolbar==3.7.0
 django-extensions==3.2.1
 eventlet==0.33.3

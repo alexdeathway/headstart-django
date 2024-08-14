@@ -22,7 +22,6 @@ inotifywait -m -e close_write /etc/nginx/ |
 while read path action file; do
     echo "Changes in nginx configuration detected, reloading nginx!"
     nginx -s reload
-done
+done &
 
 nginx-debug -g 'daemon off;'
-

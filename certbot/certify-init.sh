@@ -29,5 +29,5 @@ fi
 
 echo "Setting up auto-renewal..."
 apk add --no-cache dcron
-echo "0 12 * * * /usr/bin/certbot renew --quiet" | crontab -
+echo "0 12 * * * certbot renew --quiet" | crontab -
 crond -f
