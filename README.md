@@ -30,7 +30,7 @@ ___
 2. **Run Docker Compose**: Execute the following command to build and run your project in a production environment:
 
     ```bash
-    docker-compose -f docker-compose.prod.yml up --build
+    docker compose -f docker-compose.prod.yml up --build
     ```
 
     yeah, that's it! Your project is now running in a production environment.
@@ -87,7 +87,7 @@ ___
 3. **Run Docker Compose**:
 
     ```bash
-    docker-compose up --build
+    docker compose up --build
     ```
 
 ---
