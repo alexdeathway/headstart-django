@@ -2,5 +2,5 @@ Django==5.1
 django-debug-toolbar==3.7.0
 django-extensions==3.2.1
 gunicorn==21.2.0
-psycopg=3.2.1
+psycopg==3.2.1
 python-dotenv==1.0.0

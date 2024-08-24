@@ -1,7 +1,7 @@
 import sys
 import os
-from psycopg2 import connect
-from psycopg2.errors import OperationalError
+from psycopg import connect
+from psycopg.errors import OperationalError
 from dotenv import load_dotenv
 load_dotenv()
 

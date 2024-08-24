@@ -8,8 +8,8 @@ postgres_ready() {
     python << END
 import sys
 
-from psycopg2 import connect
-from psycopg2.errors import OperationalError
+from psycopg import connect
+from psycopg.errors import OperationalError
 
 try:
     connect(
