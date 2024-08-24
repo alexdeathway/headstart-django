@@ -9,10 +9,10 @@ Motivation: I needed a Django Docker setup for my projects and came across this 
 
 
 - `Django 5.1`
-- `PostgreSQL 13.3`
+- `PostgreSQL 16.4`
 - `Gunicorn 21.2.0`
-- `Nginx 1.23.0`
-- `Certbot 1.27.0`
+- `Nginx 1.27.1`
+- `Certbot latest`
   
 ## Features
 
