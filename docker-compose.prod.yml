@@ -32,7 +32,7 @@ services:
             - media_files:/app/media
 
     postgres:
-        image: postgres:13.3-alpine
+        image: postgres:16.4-bullseye
         container_name: hds_postgres_production
         hostname: hds-postgres
         volumes:

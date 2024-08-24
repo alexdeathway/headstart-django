@@ -27,7 +27,7 @@ services:
             - media_files:/app/media:rw
 
     postgres:
-        image: postgres:13.3-alpine
+        image: postgres:16.4-bullseye
         hostname: hds-postgres
         container_name: hds_postgres
         volumes:
