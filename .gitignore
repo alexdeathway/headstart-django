@@ -104,7 +104,10 @@ venv/
 ENV/ 
 env.bak/ 
 venv.bak/ 
-
+.prod.env
+.dev.env
+prod.env # just in case someone used not the stated .prod.env.
+dev.env 
 # mkdocs documentation 
 /site 
 
