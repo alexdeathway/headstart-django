@@ -25,7 +25,7 @@ Motivation: I needed a Django Docker setup for my projects and came across this 
 
 ### Production Environment Setup
 ___
-1. **Create a `.env` File**: In the root directory of your project, create a `.env` file with the required environment variables. Refer to the provided `template.env` for guidance.
+1. **Create a `.prod.env` File**: In the root directory of your project, create a `.prod.env` file with the required environment variables. Refer to the provided `template.prod.env` for guidance.
 
 2. **Run Docker Compose**: Execute the following command to build and run your project in a production environment:
 
@@ -66,7 +66,7 @@ ___
     pip install -r requirements.txt
     ```
 
-6. **Create a `.env` File**: In the root directory of the project, create a `.env` file with the required environment variables. Refer to `template.env` for the necessary variables.
+6. **Create a `.dev.env` File**: In the root directory of the project, create a `.dev.env` file with the required environment variables. Refer to `template.dev.env` for the necessary variables.
 
 7. **Start the Development Server**:
 
@@ -82,7 +82,7 @@ ___
     git clone <repository-url>
     ```
 
-2. **Create a `.env` File**: In the root directory of the project, create a `.env` file with the required environment variables. Refer to `template.env` for the necessary variables.
+2. **Create a `.dev.env` File**: In the root directory of the project, create a `.dev.env` file with the required environment variables. Refer to `template.dev.env` for the necessary variables.
 
 3. **Run Docker Compose**:
 

@@ -14,8 +14,7 @@ COPY requirements.txt /tmp/requirements.txt
 RUN pip install --no-cache-dir -r /tmp/requirements.txt \
     && rm -rf /tmp/requirements.txt \
     && useradd -U app_user \
-    && install -d -m 0755 -o app_user -g app_user /app/static \
-    && install -d -m 0755 -o app_user -g app_user /app/media
+    && install -d -m 0755 -o app_user -g app_user /app
 
 
 WORKDIR /app

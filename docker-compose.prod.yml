@@ -24,7 +24,7 @@ services:
         depends_on:
             - postgres
         env_file:
-            - .env
+            - .prod.env
         ports:
             - 8000:8000
         volumes:
@@ -38,7 +38,7 @@ services:
         volumes:
             - app_data:/var/lib/postgresql/data
         env_file:
-            - .env
+            - .prod.env
     
     
     nginx:
@@ -59,7 +59,7 @@ services:
             - certbot_certs:/etc/letsencrypt/:ro
             - nginx_config:/etc/nginx/:rw
         env_file:
-            - .env
+            - .prod.env
 
     certbot:
         container_name: hds_certbot_production      
@@ -68,7 +68,7 @@ services:
         depends_on:
             - nginx
         env_file:
-            - .env
+            - .prod.env
         volumes:
             - certbot_web:/vol/www:rw
             - certbot_certs:/etc/letsencrypt/:rw
