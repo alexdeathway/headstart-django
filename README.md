@@ -97,12 +97,6 @@ I needed a robust Docker setup for my Django projects and came across this artic
 
 2. **Create a `.dev.env` File**: In the root directory of the project, create a `.dev.env` file with the required environment variables, referencing `template.dev.env`.
 
-3. **Run Docker Compose**:
-
-    ```bash
-    docker compose up --build
-    ```
-
 ## Contributing
 
 Contributions are welcome! If you have suggestions for improvements or features, please open an issue or submit a pull request. 
